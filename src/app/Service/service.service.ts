@@ -8,7 +8,7 @@ import { Cliente } from '../Modelo/Cliente';
 export class ServiceService {
 	constructor(private http:HttpClient) {  }
 
-  	Url='http://localhost:8000/banco_jro/clientes';
+  	Url='http://localhost:8080/banco_jro/clientes';
 
   	getClientes(){
   		return this.http.get<Cliente[]>(this.Url);
