@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author juan_
+ * @author JUAN RODRIGO
  */
 @Service
 public class ClienteServiceImp implements ClienteService{
@@ -26,7 +26,8 @@ public class ClienteServiceImp implements ClienteService{
 
     @Override
     public Cliente add(Cliente c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("array : "+c);
+        return repositorio.save(c);
     }
 
     @Override

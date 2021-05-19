@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'java-angular-jr';
+  title = 'BANCO JRO';
 
  constructor(private router:Router){}
 

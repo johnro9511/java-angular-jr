@@ -13,4 +13,8 @@ export class ServiceService {
   	getClientes(){
   		return this.http.get<Cliente[]>(this.Url);
   	}//getClientes
+
+  	createCliente(cliente ?: Cliente){
+  		return this.http.post<Cliente>(this.Url,cliente);
+  	}//getClientes
 }//ServiceService

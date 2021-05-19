@@ -1,1 +1,30 @@
-<p>add works!</p>
+<div class="container">
+	<div class="card">
+		<div class="card-header">
+			<h3>AGREGAR CLIENTES</h3>
+		</div>
+		<div class="card-body">
+			<form action="">
+				<div class="form-group">
+					<label for="">RFC:</label>
+					<input type="text" id="rfc" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+				</div>
+				<div class="form-group">
+					<label for="">CLIENTE:</label>
+					<input type="text" id="nom_cli" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+				</div>
+				<div class="form-group">
+					<label for="">DIRECCIÓN:</label>
+					<input type="text" id="direccion" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+				</div>
+				<div class="form-group">
+					<label for="">FECHA NAC.:</label>
+					<input type="date" id="fec_nac" class="form-control">
+				</div>
+				<br>
+				<button class="btn btn-danger">CANCELAR</button>
+				<button (click)="Guardar()" class="btn btn-success" style="margin-left: 10px;">GUARDAR</button>
+			</form>
+		</div>
+	</div>
+</div>
