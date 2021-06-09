@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author juan_
+ * @author JUAN RODRIGO
  */
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)

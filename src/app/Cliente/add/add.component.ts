@@ -17,7 +17,7 @@ export class AddComponent implements OnInit {
   Guardar(cliente ?: Cliente){
   	this.service.createCliente(cliente)
   	.subscribe(data=>{
-  		console.log(data);
+  		// console.log(data);
   		alert("SE AGREGÓ CON ÉXITO...!!");
   		this.router.navigate(["listar"]);
   		})

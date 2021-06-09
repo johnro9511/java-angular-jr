@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'BANCO JRO';
 
- constructor(private router:Router){}
+ constructor(private router:Router){ }
 
   Listar(){
     this.router.navigate(["listar"])

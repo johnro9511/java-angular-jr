@@ -10,8 +10,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ClienteServiceImp implements ClienteService{
-    @Autowired
-    
+    @Autowired 
     private ClienteRepositorio repositorio;
     
     @Override
