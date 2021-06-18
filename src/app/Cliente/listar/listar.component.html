@@ -20,7 +20,7 @@
 						<td>{{cliente.rfc}}</td>
 						<td>{{cliente.nom_cli}}</td>
 						<td>{{cliente.direccion}}</td>
-						<td>{{cliente.fec_nac}}</td>						
+						<td>{{cliente.fec_nac | date:"dd/MM/YYYY"}}</td> <!-- FECHA -->				
 						<td *ngIf ="cliente.estado == 1; else inactivo">ACTIVO</td>
 						<ng-template #inactivo><p>INACTIVO</p></ng-template>
 						<td>

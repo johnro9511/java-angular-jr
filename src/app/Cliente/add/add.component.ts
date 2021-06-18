@@ -9,18 +9,19 @@ import { Cliente } from 'src/app/Modelo/Cliente';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent implements OnInit {
+  public cliente:Cliente= new Cliente;
 
   constructor(private service:ServiceService, private router:Router) { }
 
   ngOnInit(): void { }
 
-  Guardar(cliente ?: Cliente){
-  	this.service.createCliente(cliente)
+  Guardar():void{
+  	this.service.createCliente(this.cliente)
   	.subscribe(data=>{
-  		// console.log(data);
+  		console.log(data);
   		alert("SE AGREGÓ CON ÉXITO...!!");
   		this.router.navigate(["listar"]);
-  		})
-  }
+  		});
+  }// Guardar
 
-}
+}// AddComponent

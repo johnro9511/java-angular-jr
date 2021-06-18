@@ -1,0 +1,17 @@
+/* INSTALAR ANGULAR */
+  npm install -g @angular/cli
+
+/* CREAR PROYECTO ANGULAR */
+  ng new <nameProject>
+
+/* CREAR COMPONENTES */
+  ng g -c Usuario/listar
+
+/* CREAR SERVICIOS */
+  ng g -s SErvice/service
+
+/* INICIAR SERVIDOR */ 
+  ng serve
+
+/* CORRER APLICACION EN SERVIDOR */
+  ng serve --host 192.168.1.1 --disableHostCheck

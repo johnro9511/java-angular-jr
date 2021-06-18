@@ -25,7 +25,6 @@ public class ClienteServiceImp implements ClienteService{
 
     @Override
     public Cliente add(Cliente c) {
-        System.out.println("array : "+c);
         return repositorio.save(c);
     }
 

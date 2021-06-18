@@ -7,19 +7,19 @@
 			<form action="" >
 				<div class="form-group">
 					<label for="">RFC:</label>
-					<input type="text" id="rfc" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+					<input type="text" id="rfc" class="form-control" [(ngModel)]="cliente.rfc" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" [ngModelOptions]="{standalone: true}">
 				</div>
 				<div class="form-group">
 					<label for="">CLIENTE:</label>
-					<input type="text" id="nom_cli" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+					<input type="text" id="nom_cli" class="form-control" [(ngModel)]="cliente.nom_cli" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" [ngModelOptions]="{standalone: true}">
 				</div>
 				<div class="form-group">
 					<label for="">DIRECCIÓN:</label>
-					<input type="text" id="direccion" class="form-control" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()">
+					<input type="text" id="direccion" class="form-control" [(ngModel)]="cliente.direccion" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" [ngModelOptions]="{standalone: true}">
 				</div>
 				<div class="form-group">
 					<label for="">FECHA NAC.:</label>
-					<input type="date" id="fec_nac" class="form-control">
+					<input type="date" id="fec_nac" [(ngModel)]="cliente.fec_nac" class="form-control" [ngModelOptions]="{standalone: true}">
 				</div>
 				<br>
 				<button class="btn btn-danger">CANCELAR</button>

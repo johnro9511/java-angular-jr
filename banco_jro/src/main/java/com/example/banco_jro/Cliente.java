@@ -1,5 +1,6 @@
 package com.example.banco_jro;
 
+import java.util.Date;
 import javax.persistence.*;
 
 /**
@@ -21,7 +22,8 @@ public class Cliente {
     @Column
     private String direccion;
     @Column
-    private String fec_nac;
+    @Temporal(TemporalType.DATE)// cast a Fecha
+    private Date fec_nac;
     @Column
     private int estado;
 
@@ -49,11 +51,11 @@ public class Cliente {
         this.direccion = direccion;
     }
 
-    public String getFec_nac() {
+    public Date getFec_nac() {
         return fec_nac;
     }
 
-    public void setFecnac(String fec_nac) {
+    public void setFec_nac(Date fec_nac) {
         this.fec_nac = fec_nac;
     }
 

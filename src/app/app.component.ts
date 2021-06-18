@@ -11,11 +11,11 @@ export class AppComponent {
 
  constructor(private router:Router){ }
 
-  Listar(){
+  Listar(){// ver todos los clientes
     this.router.navigate(["listar"])
   }
 
-  Nuevo(){
+  Nuevo(){// agregar nvo. cliente
     this.router.navigate(["add"])
   }
 }
