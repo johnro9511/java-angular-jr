@@ -1,0 +1,7 @@
+/* CREAR PROYECTO */
+  https://start.spring.io/
+
+/* AGREGAR DEPENDENCIAS */
+  --> JPA
+  --> WEB
+  --> PostgreSQL

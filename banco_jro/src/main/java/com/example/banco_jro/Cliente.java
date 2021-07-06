@@ -1,20 +1,20 @@
 package com.example.banco_jro;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import java.util.Date;
 import javax.persistence.*;
 
 /**
  *
- * @author juan_
+ * @author JUAN RODRIGO
  */
 
 @Entity
 @Table (name="cliente")
 
 public class Cliente {
-    // @Id
-    // @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Id
+    // @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column
     private String rfc;
     @Column
@@ -23,6 +23,8 @@ public class Cliente {
     private String direccion;
     @Column
     @Temporal(TemporalType.DATE)// cast a Fecha
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "America/Mexico_City")// zona horaria
+
     private Date fec_nac;
     @Column
     private int estado;
@@ -52,10 +54,12 @@ public class Cliente {
     }
 
     public Date getFec_nac() {
+        System.out.println("fecha get: "+ fec_nac);
         return fec_nac;
     }
 
     public void setFec_nac(Date fec_nac) {
+        System.out.println("fecha may: "+ fec_nac);
         this.fec_nac = fec_nac;
     }
 

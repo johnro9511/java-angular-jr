@@ -3,5 +3,5 @@ export class Cliente{
 	nom_cli ?: String;
 	direccion ?: String;
 	fec_nac ?: Date;
-	estado ?: number;
+	estado ?: number = 1;// valor por default
 }

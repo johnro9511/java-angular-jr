@@ -24,8 +24,8 @@
 						<td *ngIf ="cliente.estado == 1; else inactivo">ACTIVO</td>
 						<ng-template #inactivo><p>INACTIVO</p></ng-template>
 						<td>
-							<button class="btn btn-warning">EDITAR</button>
-							<button class="btn btn-danger" style="margin-left: 10px;">BORRAR</button>
+							<button (click)="Editar(cliente)" class="btn btn-warning">EDITAR</button>
+							<button (click)="Delete(cliente)"class="btn btn-danger" style="margin-left: 10px;">BORRAR</button>
 						</td>
 					</tr>
 				</tbody>

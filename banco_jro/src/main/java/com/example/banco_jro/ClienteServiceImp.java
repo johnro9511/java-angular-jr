@@ -20,7 +20,7 @@ public class ClienteServiceImp implements ClienteService{
 
     @Override
     public Cliente listarId(String rfc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return repositorio.findByRfc(rfc);
     }
 
     @Override
@@ -30,12 +30,16 @@ public class ClienteServiceImp implements ClienteService{
 
     @Override
     public Cliente edit(Cliente c) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return repositorio.save(c);  
     }
 
     @Override
     public Cliente delete(String rfc) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Cliente c = repositorio.findByRfc(rfc);
+        if(c != null){
+            repositorio.delete(c);
+        }
+        return c;
     }
     
 }// ClienteServiceImp

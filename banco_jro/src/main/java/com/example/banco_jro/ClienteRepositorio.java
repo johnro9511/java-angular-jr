@@ -8,9 +8,9 @@ import org.springframework.data.repository.Repository;
  * @author juan_
  */
 
-public interface ClienteRepositorio extends Repository<Cliente, Integer>{
+public interface ClienteRepositorio extends Repository<Cliente, String>{
     List<Cliente>findAll();// buscar todo
-    // Cliente findOne(String rfc);// select 1
+    Cliente findByRfc(String rfc);// select debe poner el nombre By + Columna
     Cliente save(Cliente c);// guardar datos
     void delete(Cliente c);// eliminar datos
 }//ClienteRepositorio

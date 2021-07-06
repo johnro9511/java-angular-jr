@@ -23,4 +23,17 @@ export class ServiceService {
   		console.log(this.http.post<Cliente>(this.Url,cliente));
   		return this.http.post<Cliente>(this.Url,cliente);
   	}//createCliente
+
+  	getClienteId(rfc : String){
+  		return this.http.get<Cliente>(this.Url +"/"+ rfc);
+  	}// getRfc
+
+  	updateCliente(cliente : Cliente){
+  		return this.http.put<Cliente>(this.Url +"/"+ cliente.rfc,cliente);
+  	}// actualizar cliente
+
+  	deleteCliente(cliente : Cliente){
+  		return this.http.delete<Cliente>(this.Url +"/"+ cliente.rfc);
+  	}// borrar cliente
+
 }//ServiceService
