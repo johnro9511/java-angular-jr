@@ -8,7 +8,7 @@
   ng g -c Usuario/listar
 
 /* CREAR SERVICIOS */
-  ng g -s SErvice/service
+  ng g -s Service/service
 
 /* INICIAR SERVIDOR */ 
   ng serve
